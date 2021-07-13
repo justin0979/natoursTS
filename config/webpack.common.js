@@ -42,9 +42,9 @@ module.exports = {
         type: "asset",
         parser: {
           dataUrlCondition: {
-            maxSize: 3 * 1024 // 3 kBs
-          }
-        }
+            maxSize: 3 * 1024, // 3 kBs
+          },
+        },
       },
     ],
   },
