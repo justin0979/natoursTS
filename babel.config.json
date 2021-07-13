@@ -29,7 +29,7 @@
         "root": ["./"],
         "alias": {
           "&components": "./src/components",
-          "&images": "./src/images",
+          "&img": "./src/img",
           "&sass": "./src/sass",
           "&src": "./src",
           "__tests__": "./__tests__"
