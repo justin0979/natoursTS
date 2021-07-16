@@ -1,3 +1,4 @@
+import { Button } from "./Button";
 import logoWhite from "&img/logo-white.png";
 
 export const Header: React.FC = () => {
@@ -15,6 +16,7 @@ export const Header: React.FC = () => {
             is where life happens
           </span>
         </h1>
+        <Button />
       </div>
     </header>
   );
