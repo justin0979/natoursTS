@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom";
-
 export const Button = () => {
   return (
-    <Link className="btn btn-white btn-animated" to="#">
+    <a className="btn btn-white btn-animated" href="#">
       Discover our tours
-    </Link>
+    </a>
   );
 };
