@@ -14,7 +14,7 @@ module.exports = merge(commonConfig, {
     publicPath: "",
   },
   mode: "development",
-  devtool: "inline-source-map",
+  devtool: "eval-source-map",
   devServer: {
     port: 3000,
     host: "0.0.0.0", // add for docker
