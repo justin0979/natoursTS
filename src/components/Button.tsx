@@ -1,7 +1,12 @@
-export const Button = () => {
+interface ButtonProps {
+  href: string;
+  className: string;
+}
+
+export const Button: React.FC<ButtonProps> = (props) => {
   return (
-    <a className="btn btn--white btn--animated" href="#">
-      Discover our tours
+    <a className={props.className} href={props.href}>
+      {props.children}
     </a>
   );
 };
