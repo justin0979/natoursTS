@@ -52,4 +52,22 @@
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
   }
+
+  &--fixed {
+    position: sticky !important;
+    top: 3rem;
+    float: right;
+    border-radius: 50%;
+    border: solid $color-black 1px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    z-index: 1000;
+    opacity: 0;
+  }
+
+}
+
+body:hover .btn--fixed {
+  transition: 2s;
+  opacity: 1;
 }

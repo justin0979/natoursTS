@@ -20,7 +20,12 @@ export const Header: React.FC = () => {
             is where life happens
           </span>
         </h1>
-        <Button />
+        <Button
+          className="btn btn--white btn--animated"
+          href="#grid"
+        >
+          Discover our tours
+        </Button>
       </div>
     </header>
   );
