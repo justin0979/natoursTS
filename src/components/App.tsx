@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Header } from "&components/Header";
-import { Grid } from "&components/Grid";
 import { Button } from "&components/Button";
 
 const App: React.FC = () => {
@@ -11,7 +10,6 @@ const App: React.FC = () => {
       <Button className="btn btn--sticky" href="#">
         To Top
       </Button>
-      <Grid />
     </BrowserRouter>
   );
 };

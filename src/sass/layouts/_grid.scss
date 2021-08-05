@@ -18,7 +18,7 @@
     }
   }
   .col {
-    // Calculated segments
+    // Calculated segments widths
     $one2: calc((100% - (1 * #{$gutter-horizontal})) / 2);
     $one3: calc((100% - (2 * #{$gutter-horizontal})) / 3);
     $one4: calc((100% - (3 * #{$gutter-horizontal})) / 4);
