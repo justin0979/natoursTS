@@ -8,12 +8,9 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Header />
-     <Button
-       className="btn btn--fixed"
-       href="#"
-     >
-       To Top
-     </Button>
+      <Button className="btn btn--sticky" href="#">
+        To Top
+      </Button>
       <Grid />
     </BrowserRouter>
   );

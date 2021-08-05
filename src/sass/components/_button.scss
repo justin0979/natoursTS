@@ -53,9 +53,9 @@
     animation-fill-mode: backwards;
   }
 
-  &--fixed {
+  &--sticky {
     position: sticky !important;
-    top: 3rem;
+    top: 1rem;
     float: right;
     border-radius: 50%;
     border: solid $color-black 1px;
@@ -64,10 +64,9 @@
     z-index: 1000;
     opacity: 0;
   }
-
 }
 
-body:hover .btn--fixed {
-  transition: 2s;
+body:hover .btn--sticky {
+  transition: opacity 2s;
   opacity: 1;
 }
