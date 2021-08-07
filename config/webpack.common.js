@@ -1,6 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
+const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 //const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
@@ -25,13 +27,28 @@ module.exports = {
       "mp4",
       "webm",
     ],
+    plugins: [
+      new TsconfigPathsPlugin({
+        configFile: "tsconfig.json",
+      }),
+    ],
   },
   module: {
     rules: [
       {
-        test: /\.(tsx?|jsx?)$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         use: "babel-loader",
+      },
+      {
+        test: /\.tsx?$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "ts-loader",
+          options: {
+            transpileOnly: true,
+          },
+        },
       },
       {
         test: /\.html$/,
@@ -57,6 +74,11 @@ module.exports = {
       },
     }),
     new CleanWebpackPlugin(),
+    new ForkTsCheckerWebpackPlugin({
+      eslint: {
+        files: "./src/**/*.{ts,tsx,js,jsx}",
+      },
+    }),
     //    new CopyWebpackPlugin({
     //      patterns: [
     //        {
