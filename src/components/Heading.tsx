@@ -10,7 +10,7 @@ export const Heading: React.FC<HeadingProps> = (props) => {
       );
     case "secondary":
       return (
-        <div className="u-center-text">
+        <div className="u-center-text u-margin-bottom-8">
           <h2 className="heading-secondary">
             {props.children}
           </h2>

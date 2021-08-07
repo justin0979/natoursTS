@@ -6,6 +6,10 @@ export const SectionAbout: React.FC = () => {
       <Heading type="secondary">
         Exciting tours for adventurous people
       </Heading>
+      <div className="row">
+        <div className="col-1-of-2">Text content</div>
+        <div className="col-1-of-2">Image Composition</div>
+      </div>
     </section>
   );
 };
