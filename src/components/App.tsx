@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import { Header } from "&components/Header";
 import { Button } from "&components/Button";
+import { SectionAbout } from "&components/sections";
 
 const App: React.FC = () => {
   return (
@@ -10,6 +11,9 @@ const App: React.FC = () => {
       <Button className="btn btn--sticky" href="#">
         To Top
       </Button>
+      <main>
+        <SectionAbout />
+      </main>
     </BrowserRouter>
   );
 };

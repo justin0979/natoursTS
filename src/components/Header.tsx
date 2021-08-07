@@ -1,4 +1,5 @@
 import { Button } from "./Button";
+import { Heading } from "./Heading";
 import logoWhite from "&img/logo-white.png";
 
 export const Header: React.FC = () => {
@@ -12,17 +13,17 @@ export const Header: React.FC = () => {
         />
       </div>
       <div className="header__text-box">
-        <h1 className="heading-primary">
+        <Heading type="primary">
           <span className="heading-primary--main">
             Outdoors
           </span>
           <span className="heading-primary--sub">
             is where life happens
           </span>
-        </h1>
+        </Heading>
         <Button
           className="btn btn--white btn--animated"
-          href="#grid"
+          href="#about"
         >
           Discover our tours
         </Button>
