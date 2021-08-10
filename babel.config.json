@@ -14,7 +14,6 @@
     [
       "@babel/react",
       {
-        // Upgrade to new JSX Transform, no need to import React in files
         "runtime": "automatic"
       }
     ],

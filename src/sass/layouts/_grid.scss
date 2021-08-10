@@ -15,6 +15,7 @@
       margin-right: $gutter-horizontal;
     }
   }
+
   .col {
     // Calculated segments widths
     $one2: calc((100% - (1 * #{$gutter-horizontal})) / 2);

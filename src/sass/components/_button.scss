@@ -1,4 +1,17 @@
 .btn {
+  &::after {
+    content: ""; // need for ::after pseudoelement
+    display: inline-block;
+    height: 100%; // inherit from .btn b/c ::after is like
+    width: 100%; // a child element
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -33,19 +46,6 @@
     &::after {
       background-color: $color-white;
     }
-  }
-
-  &::after {
-    content: ""; // need for ::after pseudoelement
-    display: inline-block;
-    height: 100%; // inherit from .btn b/c ::after is like
-    width: 100%; // a child element
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
   }
 
   &--animated {
