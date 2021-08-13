@@ -6,7 +6,15 @@ export const SectionTours: React.FC = () => {
     <div className="section-tours" id="tours">
       <Heading type="secondary">Tours</Heading>
       <div className="row">
-        <Tours />
+        <Tours title="Well" cardNum={1}>
+          Card One
+        </Tours>
+        <Tours title="Well" cardNum={2}>
+          Card Two
+        </Tours>
+        <Tours title="Well" cardNum={3}>
+          Card Three
+        </Tours>
       </div>
     </div>
   );
