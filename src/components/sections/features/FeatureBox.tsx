@@ -7,6 +7,13 @@ interface FeatureBoxProps {
   icon: IconProp;
 }
 
+//const styling = {
+//  backgroundImage:
+//    'linear-gradient(to right, #7ed56f, #28b485)',
+//  backgroundClip: 'text',
+//  color: 'tranparent',
+//};
+
 export const FeatureBox: React.FC<FeatureBoxProps> = (
   props,
 ) => {
@@ -15,8 +22,9 @@ export const FeatureBox: React.FC<FeatureBoxProps> = (
       <FontAwesomeIcon
         className="feature-box__icon"
         icon={props.icon}
+        color="#7ed56f"
       />
-      <Heading type="tertiary">Explore the world</Heading>
+      <Heading type="tertiary">{props.heading}</Heading>
       <p className="feature-box__text">{props.children}</p>
     </div>
   );

@@ -9,20 +9,22 @@ export const SectionFeatures: React.FC = () => {
           reiciendis voluptas! Velit ex impedit laborum dolor
           quisquam! Consectetur omnis
         </FeatureBox>
-        <FeatureBox heading="Explore the World" icon="globe">
-          Dolor odit consequatur blanditiis vel atque veritatis
-          reiciendis voluptas! Velit ex impedit laborum dolor
-          quisquam! Consectetur omnis
+        <FeatureBox heading="Meet Nature" icon="compass">
+          Dolor odit blanditiis vel atque veritatis reiciendis
+          voluptas! Velit ex impedit laborum dolor quisquam!
+          Consectetur omnis
         </FeatureBox>
-        <FeatureBox heading="Explore the World" icon="globe">
+        <FeatureBox heading="Find your way" icon="map">
           Dolor odit consequatur blanditiis vel atque veritatis
           reiciendis voluptas! Velit ex impedit laborum dolor
-          quisquam! Consectetur omnis
         </FeatureBox>
-        <FeatureBox heading="Explore the World" icon="globe">
+        <FeatureBox
+          heading="Live a healthier life"
+          icon="heart"
+        >
           Dolor odit consequatur blanditiis vel atque veritatis
-          reiciendis voluptas! Velit ex impedit laborum dolor
-          quisquam! Consectetur omnis
+          ! Velit ex impedit laborum dolor quisquam!
+          Consectetur omnis
         </FeatureBox>
       </div>
     </section>
