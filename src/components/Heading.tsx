@@ -1,24 +1,31 @@
 interface HeadingProps {
   type: string;
+  className?: string;
 }
 
 export const Heading: React.FC<HeadingProps> = (props) => {
   switch (props.type) {
-    case "primary":
+    case 'primary':
       return (
-        <h1 className="heading-primary">{props.children}</h1>
+        <h1 className={`heading-primary ${props.className}`}>
+          {props.children}
+        </h1>
       );
-    case "secondary":
+    case 'secondary':
       return (
-        <div className="u-center-text u-margin-bottom-big">
-          <h2 className="heading-secondary">
+        <div className={`u-center-text u-margin-bottom-big`}>
+          <h2
+            className={`heading-secondary ${props.className}`}
+          >
             {props.children}
           </h2>
         </div>
       );
-    case "tertiary":
+    case 'tertiary':
       return (
-        <h3 className="heading-tertiary u-margin-bottom-small">
+        <h3
+          className={`heading-tertiary u-margin-bottom-small ${props.className}`}
+        >
           {props.children}
         </h3>
       );
