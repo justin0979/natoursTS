@@ -5,6 +5,7 @@ import {
   faMap,
   faKey,
   faHeart,
+  faCompass,
 } from '@fortawesome/free-solid-svg-icons';
 import { Header } from '&components/Header';
 import { Button } from '&components/Button';
@@ -13,7 +14,7 @@ import {
   SectionFeatures,
 } from '&components/sections';
 
-library.add(faHeart, faMap, faKey);
+library.add(faCompass, faHeart, faMap, faKey);
 
 const App: React.FC = () => {
   return (
