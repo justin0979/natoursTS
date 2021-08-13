@@ -1,2 +1,2 @@
-export * from './About';
-export * from './SectionFeatures';
+export * from './about';
+export * from './sectionFeatures';
