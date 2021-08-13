@@ -13,6 +13,7 @@ import { Button } from '&components/Button';
 import {
   SectionAbout,
   SectionFeatures,
+  SectionTours,
 } from '&components/sections';
 
 library.add(faGlobe, faCompass, faHeart, faMap, faKey);
@@ -27,6 +28,7 @@ const App: React.FC = () => {
       <main>
         <SectionAbout />
         <SectionFeatures />
+        <SectionTours />
       </main>
     </BrowserRouter>
   );
