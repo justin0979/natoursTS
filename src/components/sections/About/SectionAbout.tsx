@@ -1,7 +1,7 @@
-import { AboutParagraph } from "./AboutParagraph";
-import { AboutImage } from "./AboutImage";
-import { Heading } from "&components/Heading";
-import { Button } from "&components/Button";
+import { AboutParagraph } from './AboutParagraph';
+import { AboutImage } from './AboutImage';
+import { Heading } from '&components/Heading';
+import { Button } from '&components/Button';
 
 export const SectionAbout: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ export const SectionAbout: React.FC = () => {
             porro? Iste quod nostrum cumque provident culpa
             quaerat.
           </AboutParagraph>
-          <Button href="#" className="btn-text">
+          <Button href="#features" className="btn-text">
             Learn more&rarr;
           </Button>
         </div>
