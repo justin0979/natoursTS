@@ -5,7 +5,7 @@ Natours project from Udemy course:
 
 Development environment is from my repo: [devconfig](https://github.com/justin0979/devconfig/tree/react-ts)
 
-### Adding Font Awesome
+## Adding Font Awesome
 
 Follow docs for [React](https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react).
 
