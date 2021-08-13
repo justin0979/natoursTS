@@ -9,6 +9,7 @@ import {
   faCompass,
 } from '@fortawesome/free-solid-svg-icons';
 import { Header } from '&components/Header';
+import { Footer } from '&components/Footer';
 import { Button } from '&components/Button';
 import {
   SectionAbout,
@@ -26,7 +27,7 @@ const App: React.FC = () => {
         <Button className="btn btn--top  " href="#">
           To Top
         </Button>
-        <Button className="btn btn--bottom  " href="#tours">
+        <Button className="btn btn--bottom  " href="#footer">
           To Bottom
         </Button>
       </div>
@@ -35,6 +36,7 @@ const App: React.FC = () => {
         <SectionFeatures />
         <SectionTours />
       </main>
+      <Footer />
     </BrowserRouter>
   );
 };
