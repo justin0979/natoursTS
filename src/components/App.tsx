@@ -22,9 +22,14 @@ const App: React.FC = () => {
   return (
     <BrowserRouter>
       <Header />
-      <Button className="btn btn--sticky" href="#">
-        To Top
-      </Button>
+      <div className="jumper">
+        <Button className="btn btn--top  " href="#">
+          To Top
+        </Button>
+        <Button className="btn btn--bottom  " href="#tours">
+          To Bottom
+        </Button>
+      </div>
       <main>
         <SectionAbout />
         <SectionFeatures />

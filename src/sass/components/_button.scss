@@ -1,6 +1,6 @@
 .btn {
   &::after {
-    content: ""; // need for ::after pseudoelement
+    content: ''; // need for ::after pseudoelement
     display: inline-block;
     height: 100%; // inherit from .btn b/c ::after is like
     width: 100%; // a child element
@@ -53,22 +53,21 @@
     animation-fill-mode: backwards;
   }
 
-  &--sticky {
-    position: sticky !important;
+  &--top {
     top: 1rem;
-    float: right;
     border-radius: 50%;
     border: solid $color-black 1px;
     padding: 0.5rem;
     margin: 0.5rem;
-    z-index: 1000;
-    opacity: 0;
   }
-}
 
-body:hover .btn--sticky {
-  transition: opacity 2s;
-  opacity: 1;
+  &--bottom {
+    bottom: 2.5rem;
+    border-radius: 50%;
+    border: solid $color-black 1px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
 }
 
 .btn-text {

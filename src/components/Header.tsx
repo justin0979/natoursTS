@@ -1,6 +1,6 @@
-import { Button } from "./Button";
-import { Heading } from "./Heading";
-import logoWhite from "&img/logo-white.png";
+import { Button } from './Button';
+import { Heading } from './Heading';
+import logoWhite from '&img/logo-white.png';
 
 export const Header: React.FC = () => {
   return (
