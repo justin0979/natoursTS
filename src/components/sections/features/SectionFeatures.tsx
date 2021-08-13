@@ -1,13 +1,30 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FeatureBox } from './FeatureBox';
 
 export const SectionFeatures: React.FC = () => {
   return (
-    <section id="features">
-      <h1>Features</h1>
-      <FontAwesomeIcon size="3x" icon="compass" />
-      <FontAwesomeIcon size="3x" icon="map" />
-      <FontAwesomeIcon size="4x" icon="key" />
-      <FontAwesomeIcon size="4x" icon="heart" />
+    <section id="features" className="section-features">
+      <div className="row">
+        <FeatureBox heading="Explore the World" icon="globe">
+          Dolor odit consequatur blanditiis vel atque veritatis
+          reiciendis voluptas! Velit ex impedit laborum dolor
+          quisquam! Consectetur omnis
+        </FeatureBox>
+        <FeatureBox heading="Explore the World" icon="globe">
+          Dolor odit consequatur blanditiis vel atque veritatis
+          reiciendis voluptas! Velit ex impedit laborum dolor
+          quisquam! Consectetur omnis
+        </FeatureBox>
+        <FeatureBox heading="Explore the World" icon="globe">
+          Dolor odit consequatur blanditiis vel atque veritatis
+          reiciendis voluptas! Velit ex impedit laborum dolor
+          quisquam! Consectetur omnis
+        </FeatureBox>
+        <FeatureBox heading="Explore the World" icon="globe">
+          Dolor odit consequatur blanditiis vel atque veritatis
+          reiciendis voluptas! Velit ex impedit laborum dolor
+          quisquam! Consectetur omnis
+        </FeatureBox>
+      </div>
     </section>
   );
 };

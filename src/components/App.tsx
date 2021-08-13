@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
+  faGlobe,
   faMap,
   faKey,
   faHeart,
@@ -14,7 +15,7 @@ import {
   SectionFeatures,
 } from '&components/sections';
 
-library.add(faCompass, faHeart, faMap, faKey);
+library.add(faGlobe, faCompass, faHeart, faMap, faKey);
 
 const App: React.FC = () => {
   return (
