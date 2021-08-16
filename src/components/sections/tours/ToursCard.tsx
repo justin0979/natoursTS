@@ -1,45 +1,25 @@
-import { Heading } from '&components/Heading';
+import { ToursCardBack } from './ToursCardBack';
+import { ToursCardFront } from './ToursCardFront';
 
-interface ToursApp {
+interface ToursCardApp {
   cardNum: number;
   title: string;
+  price: string;
 }
 
-export const ToursCard: React.FC<ToursApp> = (props) => {
+export const ToursCard: React.FC<ToursCardApp> = (props) => {
   return (
     <div className="col-1-of-3">
       <div className="card">
-        <div className={`card__side card__side--front`}>
-          <div
-            className={`card__picture card__picture--${props.cardNum}`}
-          >
-            &nbsp;
-          </div>
-          <Heading
-            type="quarternary"
-            className="card__heading"
-          >
-            <span
-              className={`card__heading-span card__heading-span--${props.cardNum}`}
-            >
-              {props.title}
-            </span>
-          </Heading>
-          <div className="card__details">
-            <ul>
-              <li>3 day tours</li>
-              <li>Up to 30 people</li>
-              <li>2 tour guides</li>
-              <li>Sleep in cozy hotels</li>
-              <li>Difficulty: Easy</li>
-            </ul>
-          </div>
-        </div>
-        <div
-          className={`card__side card__side--back card__side--back-${props.cardNum}`}
+        <ToursCardFront
+          title={props.title}
+          cardNum={props.cardNum}
         >
           {props.children}
-        </div>
+        </ToursCardFront>
+        <ToursCardBack cardNum={props.cardNum}>
+          {props.price}
+        </ToursCardBack>
       </div>
     </div>
   );
