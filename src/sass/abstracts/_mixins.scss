@@ -1,7 +1,29 @@
 @mixin clearfix {
   &::after {
-    content: "";
+    content: '';
     clear: both;
     display: table;
+  }
+}
+
+@mixin arrow {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    text-align: center;
+    height: 7rem;
+    width: 15rem;
+    color: $color-white;
+    background-size: cover;
+    background-position: center;
+
+    &:hover {
+      border: none;
+      outline: none;
+
+      &::after {
+        border: none;
+      }
+    }
   }
 }

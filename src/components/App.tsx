@@ -24,11 +24,14 @@ const App: React.FC = () => {
     <BrowserRouter>
       <Header />
       <div className="jumper">
-        <Button className="btn btn--top  " href="#">
-          To Top
+        <Button className="btn btn--top btn--shadow" href="#">
+          <p>Top</p>
         </Button>
-        <Button className="btn btn--bottom  " href="#footer">
-          To Bottom
+        <Button
+          className="btn btn--bottom  btn--shadow"
+          href="#footer"
+        >
+          <p>Bottom</p>
         </Button>
       </div>
       <main>
