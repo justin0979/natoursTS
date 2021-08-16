@@ -29,6 +29,14 @@ export const Heading: React.FC<HeadingProps> = (props) => {
           {props.children}
         </h3>
       );
+    case 'quarternary':
+      return (
+        <h4
+          className={`heading-quarternary ${props.className}`}
+        >
+          {props.children}
+        </h4>
+      );
     default:
       return <div>No Title Provided</div>;
   }
