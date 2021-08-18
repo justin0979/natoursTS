@@ -1,1 +1,1 @@
-export * from './SectionTours';
+export { default as SectionTours } from './SectionTours';

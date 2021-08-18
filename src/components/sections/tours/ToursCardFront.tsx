@@ -1,13 +1,11 @@
-import { Heading } from '&components/Heading';
+import Heading from '&components/Heading';
 
-interface ToursCardProps {
+export interface ToursCardProps {
   cardNum: number;
   title: string;
 }
 
-export const ToursCardFront: React.FC<ToursCardProps> = (
-  props,
-) => {
+const ToursCardFront: React.FC<ToursCardProps> = (props) => {
   return (
     <div className={`card__side card__side--front`}>
       <div
@@ -26,3 +24,5 @@ export const ToursCardFront: React.FC<ToursCardProps> = (
     </div>
   );
 };
+
+export default ToursCardFront;

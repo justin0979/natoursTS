@@ -1,8 +1,8 @@
-import { Heading } from '&components/Heading';
-import { ToursCard } from './ToursCard';
-import { Button } from '&components/Button';
+import Heading from '&components/Heading';
+import ToursCard from './ToursCard';
+import Button from '&components/Button';
 
-export const SectionTours: React.FC = () => {
+const SectionTours: React.FC = () => {
   return (
     <section className="section-tours" id="tours">
       <Heading type="secondary">Most Popular Tours</Heading>
@@ -55,3 +55,5 @@ export const SectionTours: React.FC = () => {
     </section>
   );
 };
+
+export default SectionTours;

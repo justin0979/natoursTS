@@ -1,13 +1,13 @@
-import { ToursCardBack } from './ToursCardBack';
-import { ToursCardFront } from './ToursCardFront';
+import ToursCardBack from './ToursCardBack';
+import ToursCardFront from './ToursCardFront';
 
-interface ToursCardApp {
+export interface ToursCardApp {
   cardNum: number;
   title: string;
   price: string;
 }
 
-export const ToursCard: React.FC<ToursCardApp> = (props) => {
+const ToursCard: React.FC<ToursCardApp> = (props) => {
   return (
     <div className="col-1-of-3">
       <div className="card">
@@ -24,3 +24,5 @@ export const ToursCard: React.FC<ToursCardApp> = (props) => {
     </div>
   );
 };
+
+export default ToursCard;

@@ -1,6 +1,6 @@
-import { FeatureBox } from './FeatureBox';
+import FeatureBox from './FeatureBox';
 
-export const SectionFeatures: React.FC = () => {
+const SectionFeatures: React.FC = () => {
   return (
     <section id="features" className="section-features">
       <div className="row">
@@ -30,3 +30,5 @@ export const SectionFeatures: React.FC = () => {
     </section>
   );
 };
+
+export default SectionFeatures;

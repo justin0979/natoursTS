@@ -1,8 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
-import { Heading } from '&components/Heading';
+import Heading from '&components/Heading';
 
-interface FeatureBoxProps {
+export interface FeatureBoxProps {
   heading: string;
   icon: IconProp;
 }
@@ -14,9 +14,7 @@ interface FeatureBoxProps {
 //  color: 'tranparent',
 //};
 
-export const FeatureBox: React.FC<FeatureBoxProps> = (
-  props,
-) => {
+const FeatureBox: React.FC<FeatureBoxProps> = (props) => {
   return (
     <div className="col-1-of-4 feature-box">
       <FontAwesomeIcon
@@ -29,3 +27,5 @@ export const FeatureBox: React.FC<FeatureBoxProps> = (
     </div>
   );
 };
+
+export default FeatureBox;

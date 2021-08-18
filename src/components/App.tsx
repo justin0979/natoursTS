@@ -8,15 +8,16 @@ import {
   faHeart,
   faCompass,
 } from '@fortawesome/free-solid-svg-icons';
-import { Header } from '&components/Header';
-import { Footer } from '&components/Footer';
-import { Button } from '&components/Button';
+import Header from '&components/Header';
+import Footer from '&components/Footer';
+import Button from '&components/Button';
 import {
   SectionAbout,
   SectionFeatures,
   SectionTours,
 } from '&components/sections';
 
+// Globally adding Font Awesome icons
 library.add(faGlobe, faCompass, faHeart, faMap, faKey);
 
 const App: React.FC = () => {

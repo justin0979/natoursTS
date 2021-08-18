@@ -1,9 +1,9 @@
-interface HeadingProps {
+export interface HeadingProps {
   type: string;
   className?: string;
 }
 
-export const Heading: React.FC<HeadingProps> = (props) => {
+const Heading: React.FC<HeadingProps> = (props) => {
   switch (props.type) {
     case 'primary':
       return (
@@ -41,3 +41,5 @@ export const Heading: React.FC<HeadingProps> = (props) => {
       return <div>No Title Provided</div>;
   }
 };
+
+export default Heading;

@@ -1,9 +1,9 @@
-import { AboutParagraph } from './AboutParagraph';
-import { AboutImage } from './AboutImage';
-import { Heading } from '&components/Heading';
-import { Button } from '&components/Button';
+import AboutParagraph from './AboutParagraph';
+import AboutImage from './AboutImage';
+import Heading from '&components/Heading';
+import Button from '&components/Button';
 
-export const SectionAbout: React.FC = () => {
+const SectionAbout: React.FC = () => {
   return (
     <section id="about" className="section-about">
       <Heading type="secondary">
@@ -35,3 +35,5 @@ export const SectionAbout: React.FC = () => {
     </section>
   );
 };
+
+export default SectionAbout;

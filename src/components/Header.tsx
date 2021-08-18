@@ -1,8 +1,8 @@
-import { Button } from './Button';
-import { Heading } from './Heading';
+import Button from './Button';
+import Heading from './Heading';
 import logoWhite from '&img/logo-white.png';
 
-export const Header: React.FC = () => {
+const Header: React.FC = () => {
   return (
     <header id="header" className="header">
       <div className="header__logo-box">
@@ -31,3 +31,5 @@ export const Header: React.FC = () => {
     </header>
   );
 };
+
+export default Header;

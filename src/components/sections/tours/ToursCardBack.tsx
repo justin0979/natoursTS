@@ -1,10 +1,10 @@
-import { Button } from '&components/Button';
+import Button from '&components/Button';
 
 interface ToursCardBackProps {
   cardNum: number;
 }
 
-export const ToursCardBack: React.FC<ToursCardBackProps> = (
+const ToursCardBack: React.FC<ToursCardBackProps> = (
   props,
 ) => {
   return (
@@ -23,3 +23,5 @@ export const ToursCardBack: React.FC<ToursCardBackProps> = (
     </div>
   );
 };
+
+export default ToursCardBack;

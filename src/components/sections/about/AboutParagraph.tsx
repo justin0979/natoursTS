@@ -1,10 +1,10 @@
-import { Heading } from "&components/Heading";
+import Heading from '&components/Heading';
 
 interface AboutParagrahProps {
   title: string;
 }
 
-export const AboutParagraph: React.FC<AboutParagrahProps> = (
+const AboutParagraph: React.FC<AboutParagrahProps> = (
   props,
 ) => {
   return (
@@ -14,3 +14,5 @@ export const AboutParagraph: React.FC<AboutParagrahProps> = (
     </>
   );
 };
+
+export default AboutParagraph;
