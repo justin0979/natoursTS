@@ -26,13 +26,13 @@ const App: React.FC = () => {
       <Header />
       <div className="jumper">
         <Button className="btn btn--top btn--shadow" href="#">
-          <p>Top</p>
+          Up
         </Button>
         <Button
           className="btn btn--bottom  btn--shadow"
           href="#footer"
         >
-          <p>Bottom</p>
+          Down
         </Button>
       </div>
       <main>
