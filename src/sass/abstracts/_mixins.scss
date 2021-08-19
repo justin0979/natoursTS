@@ -5,29 +5,3 @@
     display: table;
   }
 }
-
-@mixin arrow {
-  &:link,
-  &:visited {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-align: center;
-    height: 1.5rem;
-    width: 3.5rem;
-    color: $color-white;
-    background-size: cover;
-    background-position: center;
-
-    &:hover {
-      border: none;
-      outline: none;
-
-      &::after {
-        border: none;
-      }
-    }
-  }
-}

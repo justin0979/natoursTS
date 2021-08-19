@@ -1,19 +1,87 @@
 .jumper {
   position: fixed;
-  right: 3rem;
+  right: 1rem;
   bottom: 2rem;
-  height: 9.8rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-right: 2rem;
-  justify-content: space-between;
-  z-index: 1000;
   opacity: 0;
+  z-index: 1000;
+
+  &__arr {
+    position: relative;
+
+    &--btn {
+      padding: 1.5rem 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-position: center;
+      height: 1.5rem;
+      width: 3.5rem;
+      color: $color-white;
+      font-size: 1.2rem;
+      font-weight: 400;
+      text-decoration: none;
+      text-transform: uppercase;
+      position: absolute;
+      transition: all 0.2s;
+
+      &-up {
+        top: -7rem;
+        right: 2rem;
+        background-image: linear-gradient(
+            to top,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary, 0.8)
+          ),
+          url(../img/hero.jpg) !important;
+        clip-path: polygon(
+          0 53%,
+          50% 0,
+          100% 53%,
+          70% 53%,
+          70% 100%,
+          30% 100%,
+          30% 53%
+        );
+      }
+
+      &-down {
+        bottom: 0.5rem;
+        right: 2rem;
+        background-image: linear-gradient(
+            to bottom,
+            rgba($color-primary-light, 0.8),
+            rgba($color-primary, 0.8)
+          ),
+          url(../img/hero.jpg);
+        clip-path: polygon(
+          30% 0,
+          70% 0,
+          70% 43%,
+          100% 43%,
+          50% 100%,
+          0 43%,
+          30% 43%
+        );
+      }
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      &:active {
+        transform: scale(1.5);
+        opacity: 1;
+      }
+    }
+
+    &:hover &--btn:not(:hover) {
+      transform: scale(0.9);
+    }
+  }
 }
 
 body:hover .jumper {
-  transition: opacity 2s;
-  opacity: 0.3;
+  transition: opacity 1s;
+  opacity: 1;
 }
