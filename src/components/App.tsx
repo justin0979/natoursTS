@@ -11,10 +11,10 @@ import {
 import Header from '&components/Header';
 import Jumper from '&components/Jumper';
 import Footer from '&components/Footer';
-import Button from '&components/Button';
 import {
   SectionAbout,
   SectionFeatures,
+  SectionStories,
   SectionTours,
 } from '&components/sections';
 
@@ -29,6 +29,7 @@ const App: React.FC = () => {
         <SectionAbout />
         <SectionFeatures />
         <SectionTours />
+        <SectionStories />
       </main>
       <Footer />
       <Jumper />
