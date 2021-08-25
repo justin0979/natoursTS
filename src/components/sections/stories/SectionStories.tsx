@@ -14,6 +14,8 @@ const SectionStories = () => {
         <Story
           img={nat8}
           title="I had the best week ever with my family"
+          alt="Person on a tour"
+          caption="Mary Smith"
         >
           Lorem officia minima ullam aliquid veritatis Sint harum
           id incidunt incidunt earum nemo. Quibusdam reiciendis
@@ -22,8 +24,16 @@ const SectionStories = () => {
           voluptates molestias dignissimos dolorem possimus iure
           perferendis
         </Story>
-        <Story img={nat9} title="Title">
-          WEEEEE
+        <Story
+          img={nat9}
+          title="Title"
+          alt="Watching horizon"
+          caption="Joe Blow"
+        >
+          Amet sed deserunt sapiente quisquam accusamus ut. Culpa
+          cum nisi aliquid incidunt facere labore Eaque obcaecati
+          repellat aspernatur autem eum adipisci Iusto eos
+          dignissimos quaerat doloremque illum? Hic eos iusto.
         </Story>
       </div>
     </section>
