@@ -1,5 +1,6 @@
 import Heading from '&components/Heading';
 import Story from './Story';
+import Button from '&components/Button';
 import nat8 from '&img/nat-8.jpg';
 import nat9 from '&img/nat-9.jpg';
 
@@ -26,15 +27,18 @@ const SectionStories = () => {
         </Story>
         <Story
           img={nat9}
-          title="Title"
+          title="Blah Blah Something Here something there"
           alt="Watching horizon"
           caption="Joe Blow"
         >
           Amet sed deserunt sapiente quisquam accusamus ut. Culpa
-          cum nisi aliquid incidunt facere labore Eaque obcaecati
-          repellat aspernatur autem eum adipisci Iusto eos
-          dignissimos quaerat doloremque illum? Hic eos iusto.
+          lorem
         </Story>
+      </div>
+      <div className="u-center-text u-margin-top-huge">
+        <Button className="btn-text" href="#">
+          Read All stories &rarr;
+        </Button>
       </div>
     </section>
   );
