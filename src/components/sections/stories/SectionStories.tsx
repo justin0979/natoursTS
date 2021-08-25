@@ -1,12 +1,16 @@
 import Heading from '&components/Heading';
 import Story from './Story';
 import Button from '&components/Button';
+import BGVideo from "&components/BGVideo";
 import nat8 from '&img/nat-8.jpg';
 import nat9 from '&img/nat-9.jpg';
+import videomp4 from '&img/video.mp4';
+import videowebm from '&img/video.webm';
 
 const SectionStories = () => {
   return (
     <section id="stories" className="section-stories">
+      <BGVideo mp4={videomp4} webm={videowebm} noVid="Your browser does not support mp4 nor webm video formats" />
       <Heading type="secondary">
         We make people genuinely happy
       </Heading>
