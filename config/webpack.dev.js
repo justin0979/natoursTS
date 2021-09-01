@@ -1,26 +1,22 @@
-const path = require("path");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const { merge } = require("webpack-merge");
-const commonConfig = require("./webpack.common");
+const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { merge } = require('webpack-merge');
+const commonConfig = require('./webpack.common');
 
 module.exports = merge(commonConfig, {
-  entry: [
-    "./src/index",
-    "./public/index.html",
-    "./src/sass/main.scss",
-  ],
+  entry: ['./src/index'],
   output: {
-    path: path.resolve(__dirname, "../dist"),
-    publicPath: "",
+    path: path.resolve(__dirname, '../dist'),
+    publicPath: '',
   },
-  mode: "development",
-  devtool: "eval-source-map",
+  mode: 'development',
+  devtool: 'eval-source-map',
   devServer: {
     port: 3000,
-    host: "0.0.0.0", // add for docker
+    host: '0.0.0.0', // add for docker
     hot: true,
     historyApiFallback: {
-      index: "index.html",
+      index: 'index.html',
     },
     overlay: true,
     writeToDisk: true,
@@ -32,26 +28,26 @@ module.exports = merge(commonConfig, {
         test: /\.s?css$/,
         use: [
           MiniCssExtractPlugin.loader,
-          "css-loader",
+          'css-loader',
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               postcssOptions: {
                 config: path.resolve(
                   __dirname,
-                  "postcss.config.js",
+                  'postcss.config.js',
                 ),
               },
             },
           },
-          "sass-loader",
+          'sass-loader',
         ],
       },
     ],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "styles.css",
+      filename: 'styles.css',
     }),
   ],
 });

@@ -14,9 +14,7 @@ const Heading: React.FC<HeadingProps> = (props) => {
     case 'secondary':
       return (
         <div className={`u-center-text u-margin-bottom-big`}>
-          <h2
-            className={`heading-secondary ${props.className}`}
-          >
+          <h2 className={`heading-secondary ${props.className}`}>
             {props.children}
           </h2>
         </div>
@@ -31,9 +29,7 @@ const Heading: React.FC<HeadingProps> = (props) => {
       );
     case 'quarternary':
       return (
-        <h4
-          className={`heading-quarternary ${props.className}`}
-        >
+        <h4 className={`heading-quarternary ${props.className}`}>
           {props.children}
         </h4>
       );
