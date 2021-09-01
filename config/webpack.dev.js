@@ -15,11 +15,7 @@ module.exports = merge(commonConfig, {
     port: 3000,
     host: '0.0.0.0', // add for docker
     hot: true,
-    historyApiFallback: {
-      index: 'index.html',
-    },
-    overlay: true,
-    writeToDisk: true,
+    historyApiFallback: true,
     // public: "posts.com" // change to whatever host name is (e.g., "client:80" or "ticketing.dex")
   },
   module: {
