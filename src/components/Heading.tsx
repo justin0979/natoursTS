@@ -1,6 +1,7 @@
 export interface HeadingProps {
   type: string;
   className?: string;
+  classNameDiv?: string;
 }
 
 const Heading: React.FC<HeadingProps> = (props) => {
@@ -12,6 +13,17 @@ const Heading: React.FC<HeadingProps> = (props) => {
         </h1>
       );
     case 'secondary':
+      if (props.classNameDiv) {
+        return (
+          <div className={props.classNameDiv}>
+            <h2
+              className={`heading-secondary ${props.className}`}
+            >
+              {props.children}
+            </h2>
+          </div>
+        );
+      }
       return (
         <div className={`u-center-text u-margin-bottom-big`}>
           <h2 className={`heading-secondary ${props.className}`}>
