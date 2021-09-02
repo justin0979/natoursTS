@@ -1,4 +1,6 @@
 import Heading from '&components/Heading';
+import FormInput from './FormInput';
+import RadioButton from './RadioButton';
 
 const SectionBooking: React.FC = () => {
   return (
@@ -14,28 +16,26 @@ const SectionBooking: React.FC = () => {
                 Start Booking Now
               </Heading>
               <div className="form__group">
-                <input
-                  className="form__input"
+                <FormInput
+                  label="Full Name"
                   type="text"
-                  placeholder="Full Name"
                   id="name"
-                  required
                 />
-                <label htmlFor="name" className="form__label">
-                  Full Name
-                </label>
               </div>
               <div className="form__group">
-                <input
-                  className="form__input"
-                  type="text"
-                  placeholder="Email Address"
+                <FormInput
+                  label="Email Address"
+                  type="email"
                   id="email"
-                  required
                 />
-                <label htmlFor="email" className="form__label">
-                  Email Address
-                </label>
+              </div>
+              <div className="form__group">
+                <RadioButton size="small">
+                  Small tour group
+                </RadioButton>
+                <RadioButton size="large">
+                  Large tour group
+                </RadioButton>
               </div>
             </form>
           </div>
