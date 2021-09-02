@@ -16,6 +16,7 @@ import {
   SectionFeatures,
   SectionStories,
   SectionTours,
+  SectionBooking,
 } from '&components/sections';
 
 // Globally adding Font Awesome icons
@@ -30,6 +31,7 @@ const App: React.FC = () => {
         <SectionFeatures />
         <SectionTours />
         <SectionStories />
+        <SectionBooking />
       </main>
       <Footer />
       <Jumper />
