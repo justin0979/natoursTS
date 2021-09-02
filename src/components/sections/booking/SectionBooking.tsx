@@ -24,18 +24,18 @@ const SectionBooking: React.FC = () => {
                 <label htmlFor="name" className="form__label">
                   Full Name
                 </label>
-                <div className="form__group">
-                  <input
-                    className="form__input"
-                    type="text"
-                    placeholder="Full Name"
-                    id="email"
-                    required
-                  />
-                  <label htmlFor="email" className="form__label">
-                    Email Address
-                  </label>
-                </div>
+              </div>
+              <div className="form__group">
+                <input
+                  className="form__input"
+                  type="text"
+                  placeholder="Email Address"
+                  id="email"
+                  required
+                />
+                <label htmlFor="email" className="form__label">
+                  Email Address
+                </label>
               </div>
             </form>
           </div>
