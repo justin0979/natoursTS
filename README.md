@@ -1,4 +1,10 @@
-# Base Development Envrionment with React
+# Natours Project from Udemy course
+
+My `react-ts` configuration is used for development.
+
+Below is from that repositories `README.md`.
+
+## Base Development Envrionment with React
 
 Natours project from Udemy course:
 [Advanced CSS and Sass](https://www.udemy.com/course/advanced-css-and-sass/)
