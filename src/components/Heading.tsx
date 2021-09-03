@@ -14,6 +14,7 @@ const Heading: React.FC<HeadingProps> = (props) => {
       );
     case 'secondary':
       if (props.classNameDiv) {
+        // use customized utility css classes
         return (
           <div className={props.classNameDiv}>
             <h2
@@ -24,6 +25,7 @@ const Heading: React.FC<HeadingProps> = (props) => {
           </div>
         );
       }
+      // use set utility css classes
       return (
         <div className={`u-center-text u-margin-bottom-big`}>
           <h2 className={`heading-secondary ${props.className}`}>
