@@ -1,8 +1,10 @@
-interface RadioButtonProps {
+interface FormRadioButtonProps {
   size: string;
 }
 
-const RadioButton: React.FC<RadioButtonProps> = (props) => {
+const FormRadioButton: React.FC<FormRadioButtonProps> = (
+  props,
+) => {
   return (
     <div className="form__radio-group">
       <input
@@ -18,4 +20,4 @@ const RadioButton: React.FC<RadioButtonProps> = (props) => {
   );
 };
 
-export default RadioButton;
+export default FormRadioButton;
