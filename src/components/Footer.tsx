@@ -44,15 +44,17 @@ const Footer: React.FC = () => {
         </div>
         <div className="col-1-of-2">
           <p className="footer__copyright">
-            Built my{' '}
+            Built by{' '}
             <a className="footer__link" href="#">
               Justin
             </a>{' '}
-            for learning from an online course{' '}
+            by following an online course,{' '}
             <a className="footer__link" href="#">
               Advanced CSS and Sass
-            </a>
-            . &copy; by Jonas Schmedtmann
+            </a>{' '}
+            , that teaches advanced concepts with styling web
+            pages. &copy; by Jonas Schmedtmann, the instructor of
+            this course.
           </p>
         </div>
       </div>
