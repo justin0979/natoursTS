@@ -1,17 +1,6 @@
+/* stylelint-disable no-descending-specificity */
 .btn {
-  &::after {
-    content: ''; // need for ::after pseudoelement
-    display: inline-block;
-    height: 100%; // inherit from .btn b/c ::after is like
-    width: 100%; // a child element
-    border-radius: 10rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: all 0.4s;
-  }
-
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -21,6 +10,10 @@
     transition: all 0.2s;
     position: relative;
     font-size: $default-font-size;
+
+    // Change for the <button> element;
+    border: none;
+    cursor: pointer;
 
     &:hover {
       transform: translateY(-0.3rem);
@@ -36,6 +29,19 @@
       transform: translateY(0.1rem);
       box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
     }
+  }
+
+  &::after {
+    content: ''; // need for ::after pseudoelement
+    display: inline-block;
+    height: 100%; // inherit from .btn b/c ::after is like
+    width: 100%; // a child element
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
   }
 
   &--white {

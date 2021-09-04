@@ -25,13 +25,18 @@ const SectionBooking: React.FC = () => {
                   id="email"
                 />
               </div>
-              <div className="form__group">
+              <div className="form__group u-margin-bottom-medium">
                 <FormRadioButton size="small">
                   Small tour group
                 </FormRadioButton>
                 <FormRadioButton size="large">
                   Large tour group
                 </FormRadioButton>
+              </div>
+              <div className="form__group">
+                <button className="btn btn--green">
+                  Next Step &rarr;
+                </button>
               </div>
             </Form>
           </div>

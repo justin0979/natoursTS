@@ -14,6 +14,7 @@ const FormRadioButton: React.FC<FormRadioButtonProps> = (
         name="size"
       />
       <label className="form__radio-label" htmlFor={props.size}>
+        <span className="form__radio-button"></span>
         {props.children}
       </label>
     </div>

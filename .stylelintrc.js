@@ -17,5 +17,7 @@ module.exports = {
         ignore: ['inside-parens'],
       },
     ],
+    'selector-combinator-space-before': null,
+    'selector-descendant-combinator-no-non-space': null,
   },
 };
