@@ -1,9 +1,29 @@
+import { useState, useEffect } from 'react';
+
 import NavItem from './NavItem';
 
 const Navigation: React.FC = () => {
+  const [inputChecked, setInputChecked] =
+    useState<boolean>(false);
+
+  const nobg = () => {
+    if (inputChecked === false) {
+      return 'navigation__background--gone';
+    }
+    return 'navigation__background';
+  };
+
+  const nonav = () => {
+    if (inputChecked === false) {
+      return 'navigation__nav--gone';
+    }
+    return 'navigation__nav';
+  };
+
   return (
     <div className="navigation">
       <input
+        onChange={(e) => setInputChecked(e.target.checked)}
         id="navi-toggle"
         className="navigation__checkbox"
         type="checkbox"
@@ -14,22 +34,42 @@ const Navigation: React.FC = () => {
       >
         MENU
       </label>
-      <div className="navigation__background">&nbsp;</div>
-      <nav className="navigation__nav">
+      <div className={`${nobg()}`}>&nbsp;</div>
+      <nav className={`${nonav()}`}>
         <ul className="navigation__list">
-          <NavItem id="01" href="#about">
+          <NavItem
+            onClick={setInputChecked}
+            id="01"
+            href="#about"
+          >
             About Natours
           </NavItem>
-          <NavItem id="02" href="#features">
+          <NavItem
+            onClick={setInputChecked}
+            id="02"
+            href="#features"
+          >
             You benefits
           </NavItem>
-          <NavItem id="03" href="#tours">
+          <NavItem
+            onClick={setInputChecked}
+            id="03"
+            href="#tours"
+          >
             Popular tours
           </NavItem>
-          <NavItem id="04" href="#stories">
+          <NavItem
+            onClick={setInputChecked}
+            id="04"
+            href="#stories"
+          >
             Stories
           </NavItem>
-          <NavItem id="05" href="#booking">
+          <NavItem
+            onClick={setInputChecked}
+            id="05"
+            href="#booking"
+          >
             Book Now
           </NavItem>
         </ul>

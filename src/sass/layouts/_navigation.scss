@@ -30,6 +30,10 @@
     transition: transform 0.8s;
 
     //    transform: scale(80);
+
+    &--gone {
+      transform: scale(0);
+    }
   }
 
   &__nav {
@@ -103,5 +107,11 @@
     opacity: 1;
     width: 100%;
     visibility: visible;
+  }
+
+  &__nav--hide {
+    opacity: 0;
+    visibility: hidden;
+    cursor: none;
   }
 }
