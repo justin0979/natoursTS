@@ -18,7 +18,7 @@ import {
   SectionTours,
   SectionBooking,
 } from '&components/sections';
-import Navigation from './Navigation';
+import { Navigation } from './nav';
 
 // Globally adding Font Awesome icons
 library.add(faGlobe, faCompass, faHeart, faMap, faKey);
