@@ -18,6 +18,7 @@ import {
   SectionTours,
   SectionBooking,
 } from '&components/sections';
+import Navigation from './Navigation';
 
 // Globally adding Font Awesome icons
 library.add(faGlobe, faCompass, faHeart, faMap, faKey);
@@ -25,6 +26,7 @@ library.add(faGlobe, faCompass, faHeart, faMap, faKey);
 const App: React.FC = () => {
   return (
     <BrowserRouter>
+      <Navigation />
       <Header />
       <main>
         <SectionAbout />
