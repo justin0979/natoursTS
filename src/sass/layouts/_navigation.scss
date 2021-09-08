@@ -41,11 +41,10 @@
 
     // using opacity only makes visual disappear. The links are
     // still able to be clicked though.
-    //opacity: 0;
-    visibility: hidden;
     opacity: 0;
+    visibility: hidden;
     width: 100%;
-    transition: all 0.8s;
+    transition: all 0.3s;
   }
 
   &__list {
@@ -101,7 +100,6 @@
 
   &__checkbox:checked ~ &__nav {
     opacity: 1;
-    width: 100%;
     visibility: visible;
   }
 }

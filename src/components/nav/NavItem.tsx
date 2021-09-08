@@ -5,7 +5,6 @@ interface NavItemProps {
 }
 
 const NavItem: React.FC<NavItemProps> = (props) => {
-  console.log(props.inputRef.current);
   return (
     <li className="navigation__item">
       <a
