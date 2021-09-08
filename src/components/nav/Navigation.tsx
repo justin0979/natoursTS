@@ -1,29 +1,13 @@
-import { useState, useEffect } from 'react';
-
+import { useRef } from 'react';
 import NavItem from './NavItem';
 
 const Navigation: React.FC = () => {
-  const [inputChecked, setInputChecked] =
-    useState<boolean>(false);
-
-  const nobg = () => {
-    if (inputChecked === false) {
-      return 'navigation__background--gone';
-    }
-    return 'navigation__background';
-  };
-
-  const nonav = () => {
-    if (inputChecked === false) {
-      return 'navigation__nav--gone';
-    }
-    return 'navigation__nav';
-  };
+  const checkRef = useRef<HTMLInputElement | null>(null);
 
   return (
     <div className="navigation">
       <input
-        onChange={(e) => setInputChecked(e.target.checked)}
+        ref={checkRef}
         id="navi-toggle"
         className="navigation__checkbox"
         type="checkbox"
@@ -34,42 +18,22 @@ const Navigation: React.FC = () => {
       >
         MENU
       </label>
-      <div className={`${nobg()}`}>&nbsp;</div>
-      <nav className={`${nonav()}`}>
+      <div className="navigation__background">&nbsp;</div>
+      <nav className="navigation__nav">
         <ul className="navigation__list">
-          <NavItem
-            onClick={setInputChecked}
-            id="01"
-            href="#about"
-          >
+          <NavItem inputRef={checkRef} id="01" href="#about">
             About Natours
           </NavItem>
-          <NavItem
-            onClick={setInputChecked}
-            id="02"
-            href="#features"
-          >
+          <NavItem inputRef={checkRef} id="02" href="#features">
             You benefits
           </NavItem>
-          <NavItem
-            onClick={setInputChecked}
-            id="03"
-            href="#tours"
-          >
+          <NavItem inputRef={checkRef} id="03" href="#tours">
             Popular tours
           </NavItem>
-          <NavItem
-            onClick={setInputChecked}
-            id="04"
-            href="#stories"
-          >
+          <NavItem inputRef={checkRef} id="04" href="#stories">
             Stories
           </NavItem>
-          <NavItem
-            onClick={setInputChecked}
-            id="05"
-            href="#booking"
-          >
+          <NavItem inputRef={checkRef} id="05" href="#booking">
             Book Now
           </NavItem>
         </ul>

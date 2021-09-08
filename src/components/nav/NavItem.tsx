@@ -1,16 +1,22 @@
 interface NavItemProps {
   href: string;
   id: string;
-  onClick: any;
+  inputRef: React.MutableRefObject<HTMLInputElement | null>;
 }
 
 const NavItem: React.FC<NavItemProps> = (props) => {
+  console.log(props.inputRef.current);
   return (
-    <li
-      onClick={() => props.onClick(false)}
-      className="navigation__item"
-    >
-      <a className="navigation__link" href={props.href}>
+    <li className="navigation__item">
+      <a
+        onClick={() => {
+          if (props.inputRef.current) {
+            props.inputRef.current.checked = false;
+          }
+        }}
+        className="navigation__link"
+        href={props.href}
+      >
         <span>{props.id}</span>
         {props.children}
       </a>
