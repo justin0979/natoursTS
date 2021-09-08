@@ -2,12 +2,12 @@ import { useRef } from 'react';
 import NavItem from './NavItem';
 
 const Navigation: React.FC = () => {
-  const checkRef = useRef<HTMLInputElement | null>(null);
+  const inputRef = useRef<HTMLInputElement | null>(null);
 
   return (
     <div className="navigation">
       <input
-        ref={checkRef}
+        ref={inputRef}
         id="navi-toggle"
         className="navigation__checkbox"
         type="checkbox"
@@ -21,19 +21,19 @@ const Navigation: React.FC = () => {
       <div className="navigation__background">&nbsp;</div>
       <nav className="navigation__nav">
         <ul className="navigation__list">
-          <NavItem inputRef={checkRef} id="01" href="#about">
+          <NavItem inputRef={inputRef} id="01" href="#about">
             About Natours
           </NavItem>
-          <NavItem inputRef={checkRef} id="02" href="#features">
+          <NavItem inputRef={inputRef} id="02" href="#features">
             You benefits
           </NavItem>
-          <NavItem inputRef={checkRef} id="03" href="#tours">
+          <NavItem inputRef={inputRef} id="03" href="#tours">
             Popular tours
           </NavItem>
-          <NavItem inputRef={checkRef} id="04" href="#stories">
+          <NavItem inputRef={inputRef} id="04" href="#stories">
             Stories
           </NavItem>
-          <NavItem inputRef={checkRef} id="05" href="#booking">
+          <NavItem inputRef={inputRef} id="05" href="#booking">
             Book Now
           </NavItem>
         </ul>
