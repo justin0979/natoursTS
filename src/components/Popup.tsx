@@ -32,7 +32,7 @@ const Popup: React.FC = () => {
             perferendis repellendus reprehenderit eligendi quos
             eum Eveniet fuga placeat ab eligendi!
           </p>
-          <Button href="#" className="btn-green">
+          <Button href="#" className="btn btn--green">
             Book Now
           </Button>
         </div>
