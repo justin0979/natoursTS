@@ -11,6 +11,7 @@ import {
 import Header from '&components/Header';
 import Jumper from '&components/Jumper';
 import Footer from '&components/Footer';
+import Popup from '&components/Popup';
 import {
   SectionAbout,
   SectionFeatures,
@@ -37,6 +38,7 @@ const App: React.FC = () => {
       </main>
       <Footer />
       <Jumper />
+      <Popup />
     </BrowserRouter>
   );
 };
