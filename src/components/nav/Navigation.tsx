@@ -33,7 +33,11 @@ const Navigation: React.FC = () => {
           <NavItem inputRef={inputRef} id="04" href="#stories">
             Stories
           </NavItem>
-          <NavItem inputRef={inputRef} id="05" href="#booking">
+          <NavItem
+            inputRef={inputRef}
+            id="05"
+            href="#section-book"
+          >
             Book Now
           </NavItem>
         </ul>
