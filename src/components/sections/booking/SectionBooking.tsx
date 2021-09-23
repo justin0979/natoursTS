@@ -6,7 +6,7 @@ import {
 
 const SectionBooking: React.FC = () => {
   return (
-    <section id="booking" className="section-book">
+    <section id="section-book" className="section-book">
       <div className="row">
         <div className="book">
           <div className="book__form">

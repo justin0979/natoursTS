@@ -5,7 +5,10 @@ import Button from '&components/Button';
 
 const Popup: React.FC = () => {
   return (
-    <div className="popup">
+    <div id="popup" className="popup">
+      <a href="#navigation-button" className="popup__close-bg">
+        &nbsp;
+      </a>
       <div className="popup__content">
         <div className="popup__left">
           <img
@@ -43,7 +46,10 @@ const Popup: React.FC = () => {
             ducimus amet omnis odio quidem Mollitia natus nihil
             ullam veniam saepe quod Veniam nihil consequatur!
           </p>
-          <Button href="#" className="btn btn--green">
+          <Button
+            href="#section-book"
+            className="btn btn--green"
+          >
             Book Now
           </Button>
         </div>

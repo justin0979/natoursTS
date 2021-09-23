@@ -11,6 +11,7 @@ const SectionTours: React.FC = () => {
           title="The Sea Explorer"
           price="$291"
           cardNum={1}
+          href="#popup"
         >
           <ul>
             <li>3 day tours</li>
@@ -24,6 +25,7 @@ const SectionTours: React.FC = () => {
           title="The Forest Hiker"
           price="$497"
           cardNum={2}
+          href="#popup"
         >
           <ul>
             <li>7 day tour</li>
@@ -37,6 +39,7 @@ const SectionTours: React.FC = () => {
           title="The Snow Adventurer"
           price="$897"
           cardNum={3}
+          href="#popup"
         >
           <ul>
             <li>5 day tour</li>

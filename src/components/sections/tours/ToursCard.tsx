@@ -5,6 +5,7 @@ export interface ToursCardApp {
   cardNum: number;
   title: string;
   price: string;
+  href: string;
 }
 
 const ToursCard: React.FC<ToursCardApp> = (props) => {
@@ -17,7 +18,7 @@ const ToursCard: React.FC<ToursCardApp> = (props) => {
         >
           {props.children}
         </ToursCardFront>
-        <ToursCardBack cardNum={props.cardNum}>
+        <ToursCardBack cardNum={props.cardNum} href={props.href}>
           {props.price}
         </ToursCardBack>
       </div>
