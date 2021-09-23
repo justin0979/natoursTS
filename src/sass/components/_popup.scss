@@ -1,3 +1,5 @@
+$borderrad: 3px;
+
 .popup {
   height: 100vh;
   width: 100%;
@@ -9,10 +11,40 @@
 
   &__content {
     @include absCenter;
-    height: 70%;
     width: 75%;
     background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
-    border-radius: 3px;
+    border-radius: $borderrad;
+    display: table;
+  }
+
+  &__left {
+    width: 33.3333333%;
+    display: table-cell;
+    border-radius: $borderrad 0 0 $borderrad;
+    overflow: hidden;
+  }
+
+  &__right {
+    width: 66.6666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid $color-grey-light-2;
+
+    hyphens: auto;
   }
 }
