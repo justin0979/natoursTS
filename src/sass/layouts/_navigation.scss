@@ -42,7 +42,7 @@
     z-index: 1300;
 
     // using opacity only makes visual disappear. The links are
-    // still able to be clicked though.
+    // still able to be clicked though, so add visibility.
     opacity: 0;
     visibility: hidden;
     width: 100%;

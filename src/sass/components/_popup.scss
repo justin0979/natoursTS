@@ -1,4 +1,4 @@
-$borderrad: 3px;
+$borderrad: 30px;
 
 .popup {
   height: 100vh;
@@ -14,11 +14,11 @@ $borderrad: 3px;
   &__content {
     @include absCenter;
     width: 75%;
-    background-color: $color-white;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
     border-radius: $borderrad;
     display: table;
     opacity: 0;
+    overflow: hidden;
     transform: translate(-50%, -50%) scale(0);
     transition: all 0.4s 0.2s;
   }
@@ -27,11 +27,11 @@ $borderrad: 3px;
     width: 33.3333333%;
     display: table-cell;
     border-radius: $borderrad 0 0 $borderrad;
-    overflow: hidden;
   }
 
   &__right {
     width: 66.6666667%;
+    background-color: $color-white;
     display: table-cell;
     vertical-align: middle;
     padding: 3rem 5rem;
