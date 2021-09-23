@@ -23,6 +23,9 @@ const Popup: React.FC = () => {
           />
         </div>
         <div className="popup__right">
+          <a href="#section-tours" className="popup__close">
+            &times;
+          </a>
           <Heading
             type="secondary"
             className=""
