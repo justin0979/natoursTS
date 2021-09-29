@@ -13,10 +13,8 @@ module.exports = merge(commonConfig, {
   devtool: 'eval-source-map',
   devServer: {
     port: 3000,
-    host: '0.0.0.0', // add for docker
     hot: true,
     historyApiFallback: true,
-    // public: "posts.com" // change to whatever host name is (e.g., "client:80" or "ticketing.dex")
   },
   module: {
     rules: [
