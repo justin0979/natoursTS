@@ -8,6 +8,10 @@
   transition: transform 0.3s;
   min-height: 30rem;
 
+  @include respond(tab-port) {
+    padding: 2rem;
+  }
+
   &__icon {
     font-size: 6rem;
     margin-bottom: 0.5rem;
