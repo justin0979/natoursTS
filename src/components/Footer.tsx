@@ -1,14 +1,23 @@
 import logoGreen2x from '&img/logo-green-2x.png';
+import logoGreen1x from '&img/logo-green-1x.png';
+import logoGreenSmall2x from '&img/logo-green-small-2x.png';
+import logoGreenSmall1x from '&img/logo-green-small-1x.png';
 
 const Footer: React.FC = () => {
   return (
     <footer id="footer" className="footer">
       <div className="footer__logo-box">
-        <img
-          src={logoGreen2x}
-          alt="Full logo"
-          className="footer__logo"
-        />
+        <picture className="footer__logo">
+          <source
+            srcSet={`${logoGreenSmall1x} 1x, ${logoGreenSmall2x} 2x`}
+            media="(max-width: 37.5em)"
+          />
+          <img
+            src={logoGreenSmall2x}
+            srcSet={`${logoGreen1x} 1x, ${logoGreen2x} 2x`}
+            alt="Full logo"
+          />
+        </picture>
       </div>
       <div className="row">
         <div className="col-1-of-2">
