@@ -11,6 +11,11 @@ $borderrad: 30px;
   visibility: hidden;
   transition: all 0.3s;
 
+  @supports (backdrop-filter: blur(10px)) {
+    background-color: rgba($color-black, 0.5);
+    backdrop-filter: blur(10px);
+  }
+
   &__content {
     @include absCenter;
     width: 75%;
@@ -83,7 +88,6 @@ $borderrad: 30px;
     }
 
     &-bg {
-      background-color: rgba($color-black, 0.8);
       position: absolute;
       top: 0;
       left: 0;
